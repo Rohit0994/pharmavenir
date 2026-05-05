@@ -1,5 +1,6 @@
 /* ================================
-   PharmAvenir — Global Stylesheet
+   PharmAvenir — Pharmaceutical Intelligence & Analytics
+   Global Stylesheet
    ================================ */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -8,6 +9,7 @@
   --primary: #0a8754;
   --primary-dark: #066a40;
   --accent: #1d4e89;
+  --accent-light: #3a73b4;
   --light: #f4f9f6;
   --gray: #6b7280;
   --dark: #1f2937;
@@ -51,7 +53,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.8rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 nav a {
@@ -64,7 +66,7 @@ nav a:hover { color: var(--primary); }
 
 /* ===== Hero Section ===== */
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
   color: var(--white);
   padding: 5rem 2rem;
   text-align: center;
@@ -73,9 +75,18 @@ nav a:hover { color: var(--primary); }
   font-size: 2.8rem;
   margin-bottom: 1rem;
 }
+.hero .tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
 .hero p {
   font-size: 1.2rem;
-  max-width: 750px;
+  max-width: 800px;
   margin: 0 auto 2rem;
 }
 .btn {
@@ -118,6 +129,9 @@ h3 { color: var(--accent); margin: 1rem 0 0.5rem; }
   color: var(--gray);
   font-size: 1.1rem;
   margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ===== Card Grid ===== */
@@ -142,7 +156,23 @@ h3 { color: var(--accent); margin: 1rem 0 0.5rem; }
   margin-bottom: 1rem;
 }
 .card h3 { margin-top: 0; }
-.card p { color: var(--gray); }
+.card p { color: var(--gray); margin-bottom: 0.5rem; }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.tags span {
+  background: var(--light);
+  color: var(--primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #d4e8de;
+}
 
 /* ===== Lists ===== */
 ul.styled {
@@ -159,6 +189,34 @@ ul.styled li::before {
   font-weight: bold;
   position: absolute;
   left: 0;
+}
+
+/* ===== Process Steps ===== */
+.process {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+.process .step {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  position: relative;
+}
+.process .num {
+  background: var(--primary);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 /* ===== FAQ ===== */
@@ -184,9 +242,7 @@ ul.styled li::before {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
-.form-group {
-  margin-bottom: 1.2rem;
-}
+.form-group { margin-bottom: 1.2rem; }
 label {
   display: block;
   font-weight: 600;
@@ -208,22 +264,13 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 0 3px rgba(10,135,84,0.1);
 }
 
-/* ===== Two Column ===== */
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
-.two-col p { margin-bottom: 1rem; color: var(--gray); }
-
 /* ===== Stats Banner ===== */
 .stats {
   background: var(--accent);
   color: var(--white);
   padding: 3rem 2rem;
 }
-.stats .grid { text-align: center; }
+.stats .grid { text-align: center; max-width: 1200px; margin: 0 auto; }
 .stats h3 {
   font-size: 2.5rem;
   color: var(--white);
@@ -281,6 +328,7 @@ footer {
   box-shadow: 0 6px 18px rgba(0,0,0,0.25);
   z-index: 999;
   transition: transform 0.3s;
+  text-decoration: none;
 }
 .chatbot-bubble:hover { transform: scale(1.1); }
 
@@ -303,7 +351,6 @@ th { background: var(--primary); color: var(--white); }
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .hero h1 { font-size: 2rem; }
-  .two-col { grid-template-columns: 1fr; }
-  nav ul { gap: 1rem; font-size: 0.95rem; }
+  nav ul { gap: 0.8rem; font-size: 0.9rem; }
   .nav-container { padding: 1rem; }
 }

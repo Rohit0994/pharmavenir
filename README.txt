@@ -1,70 +1,104 @@
 ==================================================
   PharmAvenir Website — File Guide
+  (Pharmaceutical Intelligence & Analytics)
 ==================================================
 
 This folder contains a complete multi-page website
-for the fictional pharmaceutical company "PharmAvenir".
-All pages are responsive, share a single stylesheet,
-and are ready to deploy as static HTML.
+for PharmAvenir, modeled on the real company at
+pharmavenirs.com — a pharmaceutical intelligence
+and analytics consultancy based in Hyderabad, India.
+
+All content is written in original wording based on
+factual public information about the company's
+services, focus areas, and contact details.
 
 --------------------------------------------------
 FILES INCLUDED
 --------------------------------------------------
-  index.html              -> Home page (hero, why choose us, therapeutic areas, testimonials)
-  about.html              -> Company story, mission, vision, values, journey, leadership, CSR
-  products.html           -> 12 therapeutic categories, 60+ product names, top-10 table, QA standards
-  services.html           -> CMO, R&D, regulatory, distribution, PAP, telehealth, education, B2B process
-  faqs.html               -> 25 FAQs across orders, products, shipping, prescriptions, PAP, chatbot
-  contact.html            -> 6 support emails, contact form, 6 global office addresses
-  blog.html               -> 9 sample articles ready to expand for SEO
-  careers.html            -> Why-work, 12 open roles, hiring process
-  privacy.html            -> Full privacy policy (GDPR-style)
-  terms.html              -> Full terms of service
-  chatbot-knowledge.html  -> Consolidated knowledge base for training your chatbot
-  styles.css              -> Shared stylesheet (responsive, modern, branded)
+  index.html              -> Home page (hero, why us, 4 core services, process, trusted by)
+  about.html              -> Who we are, mission/vision/values, what sets us apart, process
+  services.html           -> 4 core services in detail, engagement models, therapeutic areas
+  products.html           -> 9 productized intelligence solutions + delivery snapshot table
+  faqs.html               -> 23 FAQs across company, services, engagement, reach, careers, chatbot
+  contact.html            -> Office, phone, email, support, contact form
+  blog.html               -> 9 ready-to-expand insight articles
+  careers.html            -> Why work with us, 12 typical roles, hiring process
+  privacy.html            -> Privacy policy
+  terms.html              -> Terms of service
+  chatbot-knowledge.html  -> Consolidated knowledge base for training the chatbot
+  styles.css              -> Shared stylesheet (responsive, modern, branded green/blue)
   README.txt              -> This file
+
+--------------------------------------------------
+KEY COMPANY FACTS USED
+--------------------------------------------------
+  Tagline:        Pharmaceutical Intelligence & Analytics
+  Address:        Kondapur, Botanical Garden Road,
+                  Greater Hyderabad, Telangana, India
+  Phone:          +91 70073 82835
+  Email:          info@pharmavenirs.com
+  Support:        24/5
+  Experience:     15+ years
+  Team:           50+ experts
+  Markets:        10+
+  Therap. areas:  15+
+
+  Four core services:
+    1. Business Analytics (Power BI, brand analytics, CRM)
+    2. Forecasting & Modeling (pipeline, scenarios, LCM)
+    3. Competitive Intelligence (KOL, conferences, competitors)
+    4. Market Research (patient, physician, KOL mapping)
+
+  Three-step process:
+    01 Discovery & Scoping
+    02 Research & Modelling
+    03 Deliver & Support
 
 --------------------------------------------------
 HOW TO USE
 --------------------------------------------------
-1. Open any .html file in a web browser to preview.
+1. Open any .html file in a browser to preview.
 2. Upload the entire folder to any web host
    (Netlify, Vercel, GitHub Pages, cPanel, etc.).
-3. To customize:
-   - Update colors in styles.css :root variables
-   - Replace company name/logo in nav/footer of each file
-   - Replace placeholder phone/email/addresses
+3. Customize:
+   - Update colors in styles.css :root variables.
+   - Swap in your real logo and any branded imagery.
+   - Update or refine copy where you'd like a
+     different voice or extra detail.
 
 --------------------------------------------------
 CHATBOT INTEGRATION
 --------------------------------------------------
 The "chatbot-knowledge.html" file contains:
-  - All key company facts
+  - Company snapshot
+  - Service & solution catalog
+  - Engagement models and process
+  - Therapeutic area coverage
   - Contact channels
-  - Product categories
-  - Service descriptions
-  - Order/return policies
-  - Sample Q&A pairs
   - Behavior guidelines
+  - Sample Q&A pairs
 
 You can:
-  - Copy the content into platforms like
-    Dialogflow, Microsoft Copilot Studio, Botpress,
-    Rasa, Tidio, or Intercom as a knowledge source.
-  - Use it as the system prompt / RAG document for
-    OpenAI, Claude, or Gemini-powered chatbots.
-  - Convert it to PDF and upload as a training file.
+  - Copy the content into Dialogflow, Microsoft
+    Copilot Studio, Botpress, Tidio, Intercom,
+    Rasa, or similar platforms as a knowledge
+    source.
+  - Use it as the system prompt or RAG document
+    for OpenAI, Claude, or Gemini-powered bots.
+  - Convert it to PDF and upload as a training
+    document.
 
 The floating green "💬" bubble on every page is
 where you would embed your chatbot widget script.
 
 --------------------------------------------------
-DISCLAIMER
+NOTE
 --------------------------------------------------
-PharmAvenir is a fictional company created for this
-website template. All product names, executive names,
-addresses, phone numbers, and statistics are
-illustrative only — replace them with your real
-business information before going live.
+This site is modelled on the public-facing
+information available at pharmavenirs.com. Before
+publishing, please review and adjust the content
+to match the latest details from the official
+company team — including any updates to service
+offerings, leadership, and credentials.
 
 ==================================================
