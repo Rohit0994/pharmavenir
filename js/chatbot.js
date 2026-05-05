@@ -4,9 +4,9 @@
  */
 (function () {
   // ---- CONFIG --------------------------------------------------------------
-  // Local testing uses localhost. After deploying to Render, change this
-  // to your Render URL (e.g. "https://pharmavenir-backend.onrender.com").
-  const BACKEND_URL = "http://localhost:8000";
+  // Production backend on Hugging Face Spaces.
+  // For local testing, change to "http://localhost:8000".
+  const BACKEND_URL = "https://rohit0994-pharmavenir-backend.hf.space";
   // --------------------------------------------------------------------------
 
   const STYLES = `
