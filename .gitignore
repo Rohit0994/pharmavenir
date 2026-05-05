@@ -1,0 +1,30 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.bak
+*.tmp
+
+# VS Code
+.vscode/
+
+# Secrets — NEVER commit these
+.env
+*.env
+.env.*
+
+# Python (for the backend later)
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+env/
+chroma_db/
+
+# Node (just in case)
+node_modules/
+
+# Logs
+*.log
